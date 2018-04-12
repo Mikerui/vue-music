@@ -7,6 +7,9 @@ import store from './store'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Api from './api/index.js'
+import axios from "./config/axios.config.js"
+
+Vue.use(axios)
 Vue.prototype.$api = Api
 Vue.use(ElementUI)
 Vue.config.productionTip = false

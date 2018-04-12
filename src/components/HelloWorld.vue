@@ -9,11 +9,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'HelloWorld'
+      msg: 'HelloWorlllld'
     }
   },
   mounted(){
-    this.$api.get('/personalized/newsong','', response => {
+    this.Ajax('get','/personalized/newsong','', response => {
       if(response.data.code == 200){
          console.log(response,'接口搭建成功')
       }else{
