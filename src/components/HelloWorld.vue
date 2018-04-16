@@ -9,17 +9,10 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'HelloWorlllld'
+      msg: '你好，欢迎来到rui字网站'
     }
   },
   mounted(){
-    this.Ajax('get','/personalized/newsong','', response => {
-      if(response.data.code == 200){
-         console.log(response,'接口搭建成功')
-      }else{
-        console.log('请求苏剧错误！')
-      }    
-})
   }
 }
 </script>

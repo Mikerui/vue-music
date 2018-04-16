@@ -5,11 +5,13 @@ import App from './App'
 import router from './router'
 import store from './store'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
 import Api from './api/index.js'
-import axios from "./config/axios.config.js"
-
-Vue.use(axios)
+import Cookies from 'js-cookie'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+// import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(iView)
+Vue.use(Cookies)
 Vue.prototype.$api = Api
 Vue.use(ElementUI)
 Vue.config.productionTip = false
